@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://arjuno-008.github.io/interactive-rating-component-main-Frontend-Mentor/)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/interactive-rating-component-main-frontend-mentor-jKiWoqqMd1)
+- Live Site URL: [Click here](https://arjuno-008.github.io/interactive-rating-component-main-Frontend-Mentor/)
 
 
 ## Author
