@@ -1,0 +1,165 @@
+@import url(https://fonts.google.com/specimen/Overpass);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{    
+    --orange:hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+--lightGrey: hsl(217, 12%, 63%);
+--darkBlue: hsl(213, 19%, 18%);
+--veryDarkBlue: hsl(216, 12%, 8%);
+
+}
+body{
+    background-color: var(--veryDarkBlue);  
+    font-family: 'Overpass', sans-serif;  
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card{
+    width: 28vw;
+    background: radial-gradient(circle at top center,
+    rgba(149, 158, 172,0.3),
+      var(--darkBlue)40%
+      );
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 25px;
+    padding: 2%;
+}
+#rate{
+    display: block;
+    animation: animate 1s ease;
+}
+#rate .icon{
+    background-color: rgba(149, 158, 172,0.1);    
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+#rate .icon img{
+    width: 40%;
+    height: 40%;
+}
+#rate h1{
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 5%;
+}
+#rate p{
+    font-weight: 400;
+    font-size:0.9em;
+    color: var(--lightGrey);
+    margin-bottom: 5%;
+}
+#rate .ratebox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10% 0;
+}
+
+#rate .ratebox .rateTiles{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(149, 158, 172,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: var(--lightGrey);
+    font-weight: 700;  
+    cursor: pointer;
+    transition: all 0.1s;
+}
+#submitBtn{
+    background-color: var(--orange);
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 4% 0;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+#submitBtn:hover{
+    background-color: var(--white);    
+}
+#rate .ratebox .rateTiles:hover{
+    background-color: var(--white);
+    color: var(--darkBlue);
+}
+#rate .ratebox .clicked{
+    background-color: var(--orange);
+    color: var(--darkBlue);
+}
+
+#thankState{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    animation: animate 1s ease;
+}
+#thankState .thankimg{
+    margin: 5% 0;
+
+}
+#thankState span{
+    background-color: rgba(149, 158, 172,0.1);
+    border-radius: 25px;
+    color: var(--orange);
+    font-weight: 400;
+    margin: 3% 0;
+}
+#thankState h1{
+    color: var(--white);
+    font-weight: 400;    
+}
+#thankState p{
+    color: var(--lightGrey);
+    line-height: 1.4;
+    font-size: 0.9em;
+    text-align: center;
+    margin: 2% 0;
+}
+@keyframes animate {
+    from{
+        opacity: 0;
+
+    }to{
+        opacity: 1;
+
+    }
+    
+}
+
+
+@media only screen and (max-width: 425px) {
+    #card{
+        width: 90vw;
+        padding: 8%;
+    }
+
+}
+@media only screen and (width: 768px) {
+    #card{
+        width: 35vw;
+        padding: 2%;
+    }
+
+}
+
